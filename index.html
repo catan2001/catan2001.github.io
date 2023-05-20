@@ -27,6 +27,10 @@
         let m = today.getMinutes();
         let s = today.getSeconds();
 
+        if(getUTCHours() >= 22) {
+            let h = today.getUTCHours()- 22;
+        }
+
         let yh = today.getHours();
         let ym = today.getMinutes();
         let ys = today.getSeconds();
