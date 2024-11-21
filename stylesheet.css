@@ -1,0 +1,112 @@
+body {
+    background-color: #24252B;
+    /*top: 0; left: 0; width: 99%; height: 97%;
+      position: absolute; display: table}*/
+    margin: 0;
+    padding: 0;
+    color: #B9D9DC;
+    font-size: 20px;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    line-height: 1.35;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+p {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    color: #B9D9DC;
+}
+
+section {
+    display: block;
+    margin: 0 0 25px 0
+}
+
+a {
+    text-decoration: none;
+    color: #00ccff;
+}
+
+.navigation-bar a.active {
+    color: #fafd39;
+}
+
+
+a:hover {
+    color: #fdff6c
+}
+
+.navigation-bar a {
+    float: left;
+    font-size: 22px;
+    width: 12%;
+    text-align: center;
+}
+
+.bottom-bar a {
+    float: left;
+    font-size: 16px;
+    width: 7%;
+    text-align: center;
+}
+
+
+.about {
+    display: block;
+    text-justify: inter-word;
+    margin: 0 auto;
+    text-align: justify;
+    width: 60%;
+    background: #222222
+}
+
+codeSection {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    background: #222222
+}
+
+header {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-bottom: 2px solid #00FFFF;
+    padding: 25px 0;
+    margin: 0 0 35px 0
+}
+
+list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0 23px;
+    text-align: center;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-top: 1px solid #00FFFF;
+    padding: 25px 0;
+    margin: 0 0 35px 0
+}
