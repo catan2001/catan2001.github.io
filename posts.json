@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Post Title 1",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        "url": "post1.html"
+    },
+    {
+        "title": "Post Title 2",
+        "excerpt": "Sed nisi. Nulla quis sem at nibh elementum imperdiet...",
+        "url": "post2.html"
+    },
+    {
+        "title": "Post Title 3",
+        "excerpt": "Maecenas fermentum consequat mi. Donec fermentum...",
+        "url": "post3.html"
+    },
+    {
+        "title": "Post Title 4",
+        "excerpt": "Aliquam erat volutpat. Vivamus at augue eget arcu...",
+        "url": "post4.html"
+    }
+]
