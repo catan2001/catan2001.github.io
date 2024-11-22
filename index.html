@@ -2,17 +2,18 @@
 <html>
 
 <head>
+    <meta name="description"
+        content="Nikola Ćatić's personal website, showcasing blogs, tutorials, and projects on embedded engineering, low-level programming, and more.">
+    <meta name="keywords"
+        content="Nikola Ćatić, personal website, tutorials, blogs, embedded engineering, low-level programming, hardware design">
+    <meta name="author" content="Nikola Ćatić">
+
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
-
-    <title>
-        Nikola Ćatić - Personal Website
-    </title>
-
-    <link rel="shortcut icon" href="https://github.com/catan2001/catan2001.github.io/blob/main/favicon.ico"
-        type="image/x-icon">
-    <link rel="icon" href="https://github.com/catan2001/catan2001.github.io/blob/main/favicon.ico" type="image/x-icon">
+    <title>Nikola Ćatić - Personal Website</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <h1>Nikola Ćatić</h1>
@@ -31,97 +32,40 @@
         </div>
     </header>
 
-    <div class="recent-posts">
-        <h2>Recent Posts</h2>
-    </div>
-    <div class="about">
-        <h2>About me</h2>
-        <p>Hi there! Let me introduce myself... I'm a masters student at <a
-                href="https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/"> Faculty of Technical
-                Sciences</a> in <a href="https://en.wikipedia.org/wiki/Novi_Sad">Novi Sad</a> with interests in embedded
-            engineering, low-level programming and hardware design.
-            I also enjoy "recreational programming" term often used by
-            <a href="https://www.youtube.com/@TsodingDaily">Tsoding Daily</a>. My current focus is to expand my
-            knowledge in machine learning algorithms and computer compilers, with the goal of combining the two fields.
-        </p>
-    </div>
+
+    <main>
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <p>Stay tuned! I'll share my first tutorial soon.</p>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hi there! I'm a master's student at <a
+                    href="https://ftn.uns.ac.rs/engfaculty-of-technical-sciences-eng/">Faculty of Technical Sciences</a>
+                in <a href="https://en.wikipedia.org/wiki/Novi_Sad">Novi Sad</a> with interests in embedded engineering,
+                low-level programming, and hardware design.
+                I also enjoy "recreational programming," a term often used by <a
+                    href="https://www.youtube.com/@TsodingDaily">Tsoding Daily</a>. My current focus is to
+                expand my knowledge in machine learning algorithms and computer compilers, with the goal of combining
+                the two fields.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Nikola Ćatić (catan2001). All rights reserved.</p>
+        <h4>Social Media:</h4>
+        <div class="bottom-bar">
+            <a href="https://github.com/catan2001" aria-label="Visit my GitHub profile">GitHub</a>
+            <a href="https://www.linkedin.com/in/nikola-%C4%87ati%C4%87-b17419232/" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+            <a href="mailto:nikolacatic2001@gmail.com" aria-label="Send me an email">Email Me</a>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
-
-
-<footer>
-    <h4>Social Media:</h4>
-    <div class="bottom-bar">
-        <a href="https://github.com/catan2001"> GitHub</a>
-        <a href="https://www.linkedin.com/in/nikola-%C4%87ati%C4%87-b17419232/"> LinkedIn</a>
-        <a href="mailto: nikolacatic2001@gmail.com"> Email Me</a>
-    </div>
-</footer>
-
-
-
-
-
-
-<!--
-<script type="text/javascript" src="https://w.24timezones.com/c.js?l=c1220&amp;t=d&amp;lang=en"></script>
-
-<script>
-    function startTime() {
-        const today = new Date();
-        let h = today.getUTCHours()+2;
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-
-        if(h => 24) {
-            h = today.getUTCHours()-22;
-        }
-
-        let yh = today.getHours();
-        let ym = today.getMinutes();
-        let ys = today.getSeconds();
-
-        m = checkTime(m);
-        s = checkTime(s);
-        ym = checkTime(ym);
-        ys = checkTime(ys);
-
-        document.getElementById('txtclk').innerHTML = h + ":" + m + ":" + s;
-        document.getElementById('txtClkYourTime').innerHTML = yh + ":" + ym + ":" + ys;
-        setTimeout(startTime, 1000);
-}
-
-    function checkTime(i) {
-        if(i < 10) {i = "0" + i};
-        return i;
-    }
-</script>
-
-</head>
-
-<body data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="" onload="startTime()"><p>
-    <font size="7"><i><b>NIKOLA CATIC</b></i></font> <br>
-
-    <br>
-    <img src="arhitektura.png" style="width:560px;"><br>
-    <br>
-    <i>Time in Novi Sad: </i> 
-    <b><i id=txtclk></i> // </b>
-    <i>Your time: </i>
-    <b><i id=txtClkYourTime></i> </b>
-    <br><br>
-    
-    <a href="info.html">about</a> //
-    <a href="https://github.com/catan2001/">link to github</a> //
-    <a href="CV.pdf">resume</a> //
-    <a href="contacts.html">contact</a>
-    
-    <br>
-    <br>
-    <br>    
-    </p></body>
-
-</body>
-</html>
-
--->

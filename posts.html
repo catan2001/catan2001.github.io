@@ -2,17 +2,18 @@
 <html>
 
 <head>
+    <meta name="description"
+        content="Nikola Ćatić's personal website, showcasing blogs, tutorials, and projects on embedded engineering, low-level programming, and more.">
+    <meta name="keywords"
+        content="Nikola Ćatić, personal website, tutorials, blogs, embedded engineering, low-level programming, hardware design">
+    <meta name="author" content="Nikola Ćatić">
+
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
-
-    <title>
-        Nikola Ćatić - Posts
-    </title>
-
-    <link rel="shortcut icon" href="https://github.com/catan2001/catan2001.github.io/blob/main/favicon.ico"
-        type="image/x-icon">
-    <link rel="icon" href="https://github.com/catan2001/catan2001.github.io/blob/main/favicon.ico" type="image/x-icon">
+    <title>Nikola Ćatić - Posts</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <h1>Nikola Ćatić</h1>
@@ -31,14 +32,32 @@
         </div>
     </header>
 
-    <p> Coming soon.</p>
-</body>
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <h1>Posts</h1>
+            <p>Coming soon. Stay tuned!</p>
 
-<footer>
-    <h4>Social Media:</h4>
-    <div class="bottom-bar">
-        <a href="https://github.com/catan2001"> GitHub</a>
-        <a href="https://www.linkedin.com/in/nikola-%C4%87ati%C4%87-b17419232/"> LinkedIn</a>
-        <a href="mailto: nikolacatic2001@gmail.com"> Email Me</a>
-    </div>
-</footer>
+            <!-- Example of a post, you can add more posts here -->
+            <section id="all-posts">
+                <article class="post" data-featured="true">
+                    <p>Testing new article</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Nikola Ćatić (catan2001). All rights reserved.</p>
+        <h4>Social Media:</h4>
+        <div class="bottom-bar">
+            <a href="https://github.com/catan2001" aria-label="Visit my GitHub profile">GitHub</a>
+            <a href="https://www.linkedin.com/in/nikola-%C4%87ati%C4%87-b17419232/" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+            <a href="mailto:nikolacatic2001@gmail.com" aria-label="Send me an email">Email Me</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>

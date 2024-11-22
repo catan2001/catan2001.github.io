@@ -17,10 +17,10 @@ body {
 }
 
 p {
-    vertical-align: middle;
     width: 100%;
     text-align: center;
     color: #B9D9DC;
+    margin: 10px 0;
 }
 
 section {
@@ -33,45 +33,54 @@ a {
     color: #00ccff;
 }
 
+.navigation-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #1e1e1e;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.navigation-bar a {
+    font-size: 22px;
+}
+
+.navigation-bar a:hover {
+    color: #fdff6c;
+}
+
 .navigation-bar a.active {
     color: #fafd39;
 }
 
-
-a:hover {
-    color: #fdff6c
+@media (max-width: 768px) {
+    .navigation-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
-
-.navigation-bar a {
-    float: left;
-    font-size: 22px;
-    width: 12%;
-    text-align: center;
-}
-
-.bottom-bar a {
-    float: left;
-    font-size: 16px;
-    width: 7%;
-    text-align: center;
-}
-
 
 .about {
     display: block;
-    text-justify: inter-word;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
     text-align: justify;
     width: 60%;
-    background: #222222
+    background: #1e1e1e;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-codeSection {
+.codeSection {
     display: block;
     margin: 0 auto;
     width: 75%;
     text-align: center;
-    background: #222222
+    background: #222222;
 }
 
 header {
@@ -82,15 +91,17 @@ header {
     margin: 0 0 35px 0
 }
 
-list {
+.list {
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
 }
 
 div {
     display: flex;
     justify-content: center;
+    align-items: center; /* Added for vertical alignment */
 }
 
 h1,
@@ -106,7 +117,41 @@ h6 {
 footer {
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-top: 1px solid #00FFFF;
-    padding: 25px 0;
-    margin: 0 0 35px 0
+    border-top: 2px solid #00FFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #B9D9DC; /* Matches the body text color */
+    text-align: center;
+}
+
+footer h4 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #00ccff; /* Social media header color */
+}
+
+.bottom-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.bottom-bar a {
+    font-size: 16px;
+    color: #00ccff;
+    text-align: center;
+}
+
+a:hover,
+.navigation-bar a:hover,
+.bottom-bar a:hover {
+    color: #fdff6c;
+    transition: color 0.3s ease;
 }
