@@ -13,7 +13,10 @@ body {
 .container {
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -153,12 +156,12 @@ main {
     background-color: #24252B;
     text-align: center;
 }
-
+/*
 .container {
     width: 80%;
     margin: 0 auto;
 }
-
+*/
 /* Content Section */
 .content-section h1 {
     color: #B9D9DC;
@@ -178,7 +181,7 @@ h1 {
 }
 
 #all-posts {
-    display: table;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 60px;
     justify-items: center;
